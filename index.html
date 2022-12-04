@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ФГБУ СЭУ ФПС</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__body">
+        <div class="header__logo">
+          <div class="header__logo-img">
+            <img src="img/logo-header.png" alt="logo">
+          </div>
+        </div>
+        <div class="header__menu">
+          <div class="header__menu-body">
+            <div class="header__menu-inf">
+              <div class="nav__menu-inf-body">
+                <nav class="nav__menu-inf">
+                  <div class="nav__menu-inf-a menu-inf-a1">
+                    <a href="">МЧС России</a>
+                  </div>
+                  <div class="nav__menu-inf-a">
+                    <a href="">ГУ МЧС России</a>
+                  </div>
+                  <div class="nav__menu-inf-a">
+                    <a href="">ИЦЭП МЧС России</a>
+                  </div>
+                  <a href="" class="nav__menu-version">
+                    <div class="nav__menu-version-body">
+                      <img src="img/icons/icon-glasses.png" alt="version">
+                      <p>Версия для слабовидящих</p>
+                    </div>
+                    <div class="nav__menu-version-body-mini">
+                      <img src="img/icons/mini-glasses.png" alt="version">
+                    </div>
+                  </a>
+                  <a href="tel:+73833359939" class="nav__menu-tel">
+                    <img src="img/icons/icon-phone.png" alt="tel">
+                    <p>+7 (383) 335-99-39</p>
+                  </a>
+                </nav>
+              </div>
+            </div>
+            <div class="header__menu-basic">
+              <div class="nav__menu-basic-body">
+                <nav class="nav__menu-basic-body">
+                  <div class="header__logo-img-mini">
+                    <img src="img/logo-header.png" alt="logo">
+                  </div>
+                  <div class="nav__menu-basic-a">
+                    <a href="">Об учреждении</a>
+                  </div>
+                  <div class="nav__menu-basic-a">
+                    <a href="">Эксперты</a>
+                  </div>
+                  <div class="nav__menu-basic-a">
+                    <a href="">Эксперты</a>
+                  </div>
+                  <div class="dropdown">
+                    <div class="nav__menu-basic-button dropbtn" onmouseenter="myFunction()" onmouseleave="myFunction()">
+                      <button class="dropbtn" href="">Услуги</button>
+                    </div>
+                    <div class="dropdown-content" id="myDropdown">
+                      <a href="">Определение соответствия <br> проектной документации <br> в области ПБ</a>
+                      <a href="">Экспертные исследования</a>
+                      <a href="">Испытания веществ <br> и материалов</a>
+                      <a href="">Испытание систем <br> противопожарной защиты</a>
+                      <a href="">Сертификационные испытания</a>
+                    </div>
+                  </div>
+
+                  <div class="nav__menu-basic-a nav__menu-basic-a-hide">
+                    <a href="">Антикоррупция</a>
+                  </div>
+                  <div class="nav__menu-basic-a nav__menu-basic-a-hide">
+                    <a href="">Галерея</a>
+                  </div>
+                  <div class="nav__menu-basic-a nav__menu-basic-a-hide">
+                    <a href="">Контакты</a>
+                  </div>
+                  <div class="nav__menu-basic-a nav__menu-basic-a-last">
+                    <a href="">Ещё</a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="burger">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar__wrap">
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="burger__version-phone">
+              <a href="" class="nav__menu-version nav__menu-version-burger">
+                <div class="nav__menu-version-body-mini">
+                  <img src="img/icons/mini-glasses.png" alt="version">
+                </div>
+              </a>
+              <a href="tel:+73833359939" class="nav__menu-tel">
+                <img src="img/icons/phone-b.png" alt="tel">
+              </a>
+            </div>
+            <ul class="menu" id="menu">
+              <li><a href="#">Об учреждении</a></li>
+              <li><a href="#">Эксперты</a></li>
+              <li><a href="#">Документы</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Антикоррупция</a></li>
+              <li><a href="#">Галерея</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="popup" id="popup"></div>
+    </div>
+
+    <div class="promo">
+      <div class="promo__body">
+        <div class="promo__text">
+          <div class="promo__text-body">
+            <h1>ФГБУ СЭУ ФПС</h1>
+            <div class="promo__gradient"></div>
+            <p>ФГБУ СЭУ ФПС Испытательная пожарная</p>
+            <p>лаборатория по Новосибирской области</p>
+          </div>
+        <div class="promo__cards">
+          <div class="promo__cards-body">
+            <a href="">
+              <div class="promo__card promo__card1">
+                  <p>Работаем  с 1957 года</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="promo__card promo__card2">
+                  <p>Качество проверенное временем</p>
+              </div>
+            </a>
+            <a href="">
+              <div class="promo__card promo__card3">
+                <p>Современное испытательное оборудование</p>
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="services">
+      <div class="services__body">
+        <div class="services__h2">
+          <h2>Услуги</h2>
+        </div>
+        <div class="services__items">
+          <div class="services__items-body">
+            <a href="" class="services__item services__item1">
+              <p>Определение соответствия проектной документации <br> в области ПБ</p>
+            </a>
+            <a href="" class="services__item services__item2">
+              <p>Экспертные исследования</p>
+            </a>
+            <a href="" class="services__item services__item3">
+              <p>Испытания веществ <br> и материалов</p>
+            </a>
+            <a href="" class="services__item services__item4">
+              <p>Испытание систем противопожарной защиты</p>
+            </a>
+            <a href="" class="services__item services__item5">
+              <p>Сертификационные испытания</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="manual">
+      <div class="manual__body">
+        <div class="manual__h2">
+          <h2>Процедура оформления</h2>
+        </div>
+        <div class="manual__step-gradient"></div>
+        <div class="manual__steps">
+          <div class="manual__step manual__step-bottom-edges">
+            <div class="manual__step-body">
+              <div class="manual__step">
+                <img src="./img/step1.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="manual__step manual__step-bottom-two">
+            <div class="manual__step-body">
+              <div class="manual__step">
+                <img src="./img/step2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="manual__step manual__step-bottom">
+            <div class="manual__step-body">
+              <div class="manual__step">
+                <img src="./img/step3.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="manual__step manual__step-bottom">
+            <div class="manual__step-body">
+              <div class="manual__step">
+                <img src="./img/step4.png" alt="">
+                <div class=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="manual__step manual__step-bottom">
+            <div class="manual__step-body">
+              <div class="manual__step">
+                <img src="./img/step5.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="manual__step manual__step-bottom-edges">
+            <div class="manual__step-body">
+              <div class="manual__step">
+                <img src="./img/step6.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="manual__description">
+          <div class="manual__step-description manual__step-description1">
+            <p>Письмо-заявка <br> от заказчика</p>
+          </div>
+          <div class="manual__step-description manual__step-description2">
+            <p>Регистрация <br> письма-заявки</p>
+          </div>
+          <div class="manual__step-description manual__step-description3">
+            <p>Заключение договора, <br> выставление счета</p>
+          </div>
+          <div class="manual__step-description manual__step-description4">
+            <p>Проведение работ, <br> оказание услуг</p>
+          </div>
+          <div class="manual__step-description manual__step-description5">
+            <p>Регистрация <br> заключения</p>
+          </div>
+          <div class="manual__step-description manual__step-description6">
+            <p>Подписание акта <br>выполненных работ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="team">
+      <div class="team__body">
+        <div class="team__h2">
+          <h2>Наша команда</h2>
+        </div>
+        <div class="team__img-body">
+          <div class="team__img team__img1">
+          </div>
+          <div class="team__img team__img2">
+          </div>
+          <div class="team__img team__img3">
+          </div>
+          <div class="team__img team__img4">
+          </div>
+          <div class="team__img team__img5">
+          </div>
+          <div class="team__img team__img6">
+          </div>
+          <div class="team__img team__img7">
+          </div>
+          <div class="team__img team__img8">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="connection">
+      <div class="connection__body">
+        <div class="connection__question">
+          <div class="question__h2">
+            <h2>Задайте свой вопрос</h2>
+          </div>
+          <form action="" class="question__form">
+            <div class="question__block-left">
+              <div class="question__block-left-body">
+                <div class="question__input question__input-text">
+                  <input type="text" placeholder="Имя">
+                </div>
+                <div class="question__input question__input-tel">
+                  <input type="tel" placeholder="телефон">
+                </div>
+                <div class="question__input question__input-email">
+                  <input type="email" placeholder="email">
+                </div>
+                <div class="question__checkbox">
+                  <div class="question__checkbox-body">
+                    <input type="checkbox">
+                    <p class="question__checkbox-p">Я согласен на обработку <a href="">персональных данных</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="question__block-right">
+              <div class="question__block-right-body">
+                <div class="question__block-textarea">
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий..."></textarea>
+                </div>
+                <div class="question__checkbox2">
+                  <div class="question__checkbox-body">
+                    <input type="checkbox">
+                    <p class="question__checkbox-p">Я согласен на обработку <a href="">персональных данных</a></p>
+                  </div>
+                  <button>Отправить</button>
+                </div>
+                <button>Отправить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="connection__call">
+          <div class="call__h2">
+            <h2>Позвоните</h2>
+          </div>
+          <div class="call__numbers">
+            <div class="call__numbers-body">
+              <div class="call__number-item">
+                <div class="call__number-img">
+                  <img src="img/icons/icon-phone-w.png" alt="">
+                </div>
+                <div class="call__number-body">
+                  <p class="call__description">Лаборатория</p>
+                  <p class="call__number">(383) 335-99-04</p>
+                </div>
+              </div>
+            </div>
+            <div class="call__numbers-body">
+              <div class="call__number-item">
+                <div class="call__number-img">
+                  <img src="img/icons/icon-phone-w.png" alt="">
+                </div>
+                <div class="call__number-body">
+                  <p class="call__description">Судебная экспертиза</p>
+                 <p class="call__number">(383) 335-96-03</p>
+                </div>
+              </div>
+            </div>
+            <div class="call__numbers-body">
+              <div class="call__number-item">
+                <div class="call__number-img">
+                  <img src="img/icons/icon-phone-w.png" alt="">
+                </div>
+                <div class="call__number-body">
+                  <p class="call__description">Секретарь</p>
+                 <p class="call__number">(383) 335-99-39</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacts">
+      <div class="contacts__bg">
+        <div class="contacts__body">
+          <div class="contacts__flex">
+            <div class="contacts_column">
+              <div class="contacts__left">
+                <div class="contacts__h2">
+                  <h2>Контакты</h2>
+                </div>
+                <div class="contacts__Address contacts__item">
+                  <img src="img/icons/icon-phone.png" alt="">
+                  <p>Адрес</p>
+                </div>
+                <div class="contacts__Address-name">
+                  <p>630060, г. Новосибирск, <br>
+                     ул.Зеленая Горка,12.</p>
+                </div>
+                <div class="contacts__tel contacts__item">
+                  <img src="img/icons/icon-phone.png" alt="">
+                  <p>Телефоны</p>
+                </div>
+                <div class="contacts__tel-body">
+                  <p class="contacts__tel-description">Лаборатория</p>
+                  <p class="contacts__tel-number">(383) 335-99-04</p>
+                </div>
+                <div class="contacts__tel-body">
+                  <p class="contacts__tel-description">Судебная экспертиза</p>
+                  <p class="contacts__tel-number">(383) 335-96-03</p>
+                </div>
+                <div class="contacts__tel-body">
+                  <p class="contacts__tel-description">Секретарь</p>
+                  <p class="contacts__tel-number">(383) 335-99-39</p>
+                </div>
+              </div>
+              <div class="contacts__right">
+                <div class="contacts__mail contacts__item">
+                  <img src="img/icons/Iocn-mail.png" alt="">
+                  <p>E-mail</p>
+                </div>
+                <div class="contacts__mail-name">
+                  <p>IPL@54.mchs.gov.ru</p>
+                </div>
+                <div class="contacts__reception-visitors contacts__item">
+                  <img src="img/icons/icon-time.png" alt="">
+                  <p>Приём посетителей</p>
+                </div>
+                <div class="contacts__reception-visitors-body">
+                  <p class="contacts__reception-visitors-description">Пн—Чт</p>
+                  <p class="contacts__reception-visitors-number">9:00-18:00</p>
+                </div>
+                <div class="contacts__reception-visitors-body">
+                  <p class="contacts__reception-visitors-description">Пт</p>
+                  <p class="contacts__reception-visitors-number">9:00-16:45</p>
+                </div>
+                <div class="contacts__reception-visitors-body">
+                  <p class="contacts__reception-visitors-description">Обед</p>
+                  <p class="contacts__reception-visitors-number">13:00-13:45</p>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__map">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e13843e9e127bfe4c6fb28f1ea5d0ad5ed3212130a003ba3a9c2bc74b5f018a&amp;width=100%25&amp;height=481&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__body">
+        <div class="footer_left-text">
+          <p>1957-2021 © ФГБУ СЭУ ФПС по НО</p>
+        </div>
+        <div class="footer_right-text">
+          <a href="">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
