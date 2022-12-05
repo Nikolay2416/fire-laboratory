@@ -54,3 +54,30 @@ function closeOnClick() {
   hamb.classList.remove("active");
   body.classList.remove("noscroll");
 }
+
+
+// scrolling through the menu
+
+const header = document.querySelector('.burger');
+const headerPositionNotifier = document.createElement('div');
+headerPositionNotifier.classList.add('header-position-notifier')
+header.parentNode.insertBefore(headerPositionNotifier, header);
+
+const options = {
+  threshold: [0]
+};
+const callback = (entries) => {
+  entries.forEach(({
+    intersectionRatio
+  }) => {
+    if (intersectionRatio == 0) {
+      header.classList.add('fixed');
+      header.classList.remove('opacity')
+    } else {
+      header.classList.remove('fixed')
+      header.classList.add('opacity')
+    }
+  })
+}
+const io = new IntersectionObserver(callback, options);
+io.observe(headerPositionNotifier);
